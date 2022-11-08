@@ -65,9 +65,9 @@ class TradeStationClient():
             'redirect_uri': redirect_uri,
             'resource': 'https://api.tradestation.com',
             'paper_resource': 'https://sim-api.tradestation.com',
-            'api_version': 'v2',
-            'paper_api_version': 'v2',
-            'auth_endpoint': 'https://api.tradestation.com/v2/Security/Authorize',
+            'api_version': 'v3',
+            'paper_api_version': 'v3',
+            'auth_endpoint': 'https://api.tradestation.com/v3/Security/Authorize',
             'cache_state': True,
             'refresh_enabled': True,
             'paper_trading': paper_trading
@@ -467,7 +467,7 @@ class TradeStationClient():
         params = urllib.parse.urlencode(data)
 
         # build the full URL for the authentication endpoint.
-        url = 'https://api.tradestation.com/v2/authorize?' + params
+        url = 'https://api.tradestation.com/v3/authorize?' + params
 
         # aks the user to go to the URL provided, they will be prompted to authenticate themsevles.
         print('')
