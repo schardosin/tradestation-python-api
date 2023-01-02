@@ -1495,7 +1495,7 @@ class TradeStationClient():
         self._token_validation()
 
         # define the endpoint.
-        url_endpoint = self._api_endpoint(url='orders')
+        url_endpoint = self._api_endpoint(url='orderexecution/orders')
         print(url_endpoint)
 
         # define the arguments.
