@@ -1496,6 +1496,7 @@ class TradeStationClient():
 
         # define the endpoint.
         url_endpoint = self._api_endpoint(url='orders')
+        print(url_endpoint)
 
         # define the arguments.
         params = {
